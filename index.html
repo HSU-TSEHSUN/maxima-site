@@ -43,19 +43,19 @@
       border-left: 6px solid #f90;
       padding-left: 16px;
     }
-    .features {
+    .features, .faq, .testimonials, .team, .partners {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
     }
-    .card {
+    .card, .faq-item, .testimonial, .team-member, .partner-logo {
       background: #1e1e1e;
       border-radius: 12px;
-      padding: 30px;
+      padding: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
-    .card:hover {
+    .card:hover, .faq-item:hover, .testimonial:hover, .team-member:hover {
       transform: translateY(-8px);
     }
     .button {
@@ -85,6 +85,13 @@
       padding: 20px;
       color: #aaa;
       font-size: 0.9em;
+    }
+    img.partner-logo {
+      max-width: 100%;
+      height: auto;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -124,9 +131,79 @@
 </section>
 
 <section class="section">
-  <h2>現在加入，掌握先機</h2>
-  <p>Maxima DAO 正在改變全球金融生態，無論你是交易新手或資深投資人，現在都是最佳進場時機。</p>
-  <a href="https://agreement.maximadao.com/#/register?code=66753267" class="button" target="_blank">立即註冊</a>
+  <h2>常見問題（FAQ）</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <h4>Maxima DAO 是什麼？</h4>
+      <p>Maxima 是一個基於區塊鏈的去中心化金融平台，提供量化交易、自動分潤等功能。</p>
+    </div>
+    <div class="faq-item">
+      <h4>我需要加密貨幣錢包嗎？</h4>
+      <p>是的，建議使用 MetaMask、TrustWallet 等支援 Web3 的錢包。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>使用者見證</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>我原本是交易新手，在 Maxima 獲得穩定收益，並學到許多區塊鏈知識！</p>
+      <p><strong>— 小明，行銷人員</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>透過 IB 模式推廣後獲利可觀，還結交了很多 DAO 夥伴。</p>
+      <p><strong>— Annie，自由工作者</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>核心團隊</h2>
+  <div class="team">
+    <div class="team-member">
+      <h4>Leo – 技術總監</h4>
+      <p>10 年以上區塊鏈經驗，精通智能合約與分散式架構。</p>
+    </div>
+    <div class="team-member">
+      <h4>Joyce – 社群營運長</h4>
+      <p>擁有品牌經營背景，專注推廣 Maxima 全球化。</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>合作夥伴</h2>
+  <div class="partners">
+    <img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Bitfinex_logo.svg/512px-Bitfinex_logo.svg.png" alt="Bitfinex">
+    <img class="partner-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Binance_logo.svg/512px-Binance_logo.svg.png" alt="Binance">
+  </div>
+</section>
+
+<section class="section">
+  <h2>下載白皮書</h2>
+  <p>想深入了解 Maxima DAO 的技術架構與營運模式？歡迎下載最新白皮書：</p>
+  <a href="#" class="button">點我下載 PDF</a>
+</section>
+
+<section class="section">
+  <h2>加入社群</h2>
+  <div class="features">
+    <div class="card">
+      <h4>LINE 社群</h4>
+      <img src="https://qr-official.line.me/sid/L/xxxx.png" alt="LINE QR" style="width:100%;">
+    </div>
+    <div class="card">
+      <h4>Telegram 頻道</h4>
+      <a class="button" href="https://t.me/maximadao" target="_blank">加入 Telegram</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>聯絡我們</h2>
+  <p>若您對 Maxima 有任何疑問，歡迎聯繫我們團隊：</p>
+  <a class="button" href="mailto:service@maximadao.com">Email 聯絡信箱</a>
 </section>
 
 <footer>
